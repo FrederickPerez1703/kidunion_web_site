@@ -1,4 +1,4 @@
-🧾 Proyecto-Bienes-Raices
+🧾 Proyecto-Bienes-Raices: 
 Este proyecto trata de lo que una pagina web estática de lo que s Bienes Raíces valga la redundancia y esta en su parte inicial...
 
 👨‍💻 Tecnologia Usadas en este Proyecto
