@@ -14,6 +14,9 @@ body{
     max-width: 120rem;
     margin: 0 auto;
 }
+img{
+    max-width: 100%;
+}
 h1{
     font-size: 3.8rem;
 }
@@ -96,4 +99,11 @@ h4{
 }
 .icono h3{
     text-transform: uppercase;
+}
+.contenedor-anucios{
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
 }
