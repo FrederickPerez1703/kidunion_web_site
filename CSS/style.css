@@ -40,8 +40,40 @@ h4{
 .fw-300{
     font-weight: 300;
 }
+.d-block{
+    display: block! important;
+}
 /*------------------------------*/
+/**Botones**/
+.boton{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    text-align: center;
+    display: inline-block;
+    margin-top: 3rem;
+}
+.boton-amarillo{
+    background-color: #E1831A; 
+}
+.boton-amarillo:hover{
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all .60s;
 
+    border-radius: 2rem 2rem;
+}
+.boton-verde{
+    background-color: #71B100;
+}
+.boton-verde:hover{
+    transition: all .60s;
+
+    border-radius: 2rem 2rem;
+}
 /*Header */
 .Site-header.inicio{
     background-image: url(../img/header.jpg);
@@ -106,4 +138,150 @@ h4{
 }
 .anuncio{
     flex-basis: calc(33.3% - 1rem);
+    border:1px solid #868387;
+    background-color: #F5F5F5;
+}
+.contenido-anuncios{
+    padding: 2rem 4rem;
+}
+.contenido-anuncios h3 , .contenido-anuncios p{
+    margin: 0;
+ }
+ .precio{
+     color:#00D517; 
+     font-weight: 700;
+ }
+ .icono-carateristica{
+     display: flex;
+     justify-items: center;
+     padding: 0;
+     list-style: none;
+     justify-content: space-evenly;
+ }
+ .icono-carateristica li{
+     display: flex;
+ }
+ .icono-carateristica li img{
+     margin-right: 2rem;
+ }
+ .ver-todas{
+     display: flex;
+     justify-content: flex-end;
+ }
+ /*imagen-contacto home*/
+ .imagen-contacto{
+     background-image: url(../img/encuentra.jpg);
+     background-position: center center;
+     background-size: cover;
+     height: 40rem;
+     display: flex;
+     align-items: center;
+ }
+ .contenido-contacto{
+     flex: 1;
+     color: white;
+ }
+ .contenido-contacto p{
+     font-size: 2rem;
+ }
+ /**seccion inferior **/
+ .seccion-inferior{
+     display: flex;
+     justify-content: space-between;
+ }
+ .seccion-inferior .blog{
+     flex-basis: 60%;
+ }
+ .seccion-inferior .testimoniales{
+     flex-basis: calc(40% -2rem);
+ }
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type{
+    margin: 0;
+}
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada a{
+    color:black;
+    text-decoration:none;
+}
+.texto-entrada h4::after{
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    border-radius: 2rem 2rem;
+    margin-top: 1rem;
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.texto-entrada span{
+    color: #E1831A;  
+}
+/*** Testimoniales **/
+.testimonial {
+    background-color: #71B100;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: #ffffff;
+    border-radius: 2rem;
+}
+.testimonial  p {
+    text-align: right;
+    font-size: 1rem;
+}
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: -2rem;
+}
+
+.testimonial blockquote {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 300;
+}
+/** Footer **/
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.site-footer nav {
+    display: none;
+}
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
 }
