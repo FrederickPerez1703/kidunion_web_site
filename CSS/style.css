@@ -7,6 +7,7 @@ body{
    font-family: 'Lato', sans-serif;
    font-size:1.6rem ;
    line-height: 2;
+   background-color: #f2f2f2;
 }
 
 /**Globales**/
@@ -29,6 +30,7 @@ h3{
 h4{
     font-size: 2.6rem;
 }
+
 /** Utilidades **/
 .seccion{
     margin-top: 2rem;
@@ -42,6 +44,9 @@ h4{
 }
 .d-block{
     display: block! important;
+}
+.contenido-centrado{
+    max-width: 800px;
 }
 /*------------------------------*/
 /**Botones**/
@@ -75,6 +80,10 @@ h4{
     border-radius: 2rem 2rem;
 }
 /*Header */
+.Site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem  0 ;
+}
 .Site-header.inicio{
     background-image: url(../img/header.jpg);
     background-position: center;
@@ -128,6 +137,7 @@ h4{
 .icono{
     flex-basis: calc(33.3% - 1rem);
     text-align: center;
+
 }
 .icono h3{
     text-transform: uppercase;
@@ -135,11 +145,13 @@ h4{
 .contenedor-anucios{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .anuncio{
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     border:1px solid #868387;
     background-color: #F5F5F5;
+    margin-bottom: 2rem;
 }
 .contenido-anuncios{
     padding: 2rem 4rem;
@@ -157,6 +169,8 @@ h4{
      padding: 0;
      list-style: none;
      justify-content: space-evenly;
+     flex: 1;
+     max-width: 500px;
  }
  .icono-carateristica li{
      display: flex;
@@ -284,4 +298,24 @@ h4{
 .copyright {
     margin: 0;
     color: #ffffff;
+}
+
+/** Paginas internas**/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0 ;
+}
+/**Anucions **/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
